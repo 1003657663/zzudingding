@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@drawable/set_top_bg">
+
+                <ImageView
+                    android:id="@+id/set_my_photo"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="70dp"
+                    android:src="@drawable/my_photo" />
+
+                <Button
+                    android:id="@+id/set_top_jiaowu_login"
+                    android:layout_below="@+id/set_my_photo"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="登录"
+                    android:background="@drawable/border"
+                    android:layout_centerHorizontal="true"/>
+                <TextView
+                    android:id="@+id/set_my_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/set_my_photo"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="20dp"
+                    android:text="宋超" />
+
+                <TextView
+                    android:id="@+id/set_my_xuehao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/set_my_name"
+                    android:layout_centerHorizontal="true"
+                    android:text="20132430221" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/set_reset_jiaowu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/lightblue"
+                android:orientation="vertical"
+                android:paddingBottom="30dp"
+                android:paddingTop="40dp">
+                <TextView
+                    android:id="@+id/set_jiaowu_reset_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="20dp"
+                    android:text="教务中心"
+                    android:textColor="@color/snow"
+                    android:textSize="20sp" />
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:text="登录或者注销教务中心的登录状态"/>
+                <Button
+                    android:id="@+id/set_jiaowu_reset_button"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/primary_button"
+                    android:text="登录" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/set_reset_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_indigo"
+                android:orientation="vertical"
+                android:paddingBottom="30dp"
+                android:paddingTop="40dp">
+                <TextView
+                    android:id="@+id/set_card_reset_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="20dp"
+                    android:text="校卡中心"
+                    android:textColor="@color/snow"
+                    android:textSize="20sp" />
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:text="登录或者注销校卡中心的登录状态"/>
+                <Button
+                    android:id="@+id/set_card_reset_button"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/primary_button"
+                    android:text="登录" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/set_jiaowu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/lightgreen"
+                android:orientation="vertical"
+                android:paddingBottom="50dp"
+                android:paddingTop="50dp">
+
+                <TextView
+                    android:id="@+id/set_jiaowu_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="教务中心自动登陆"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:lineSpacingExtra="8sp"
+                    android:padding="20dp"
+                    android:text="@string/set_jiaowu_content" />
+
+                <com.codeevery.myElement.MySwitch
+                    android:id="@+id/set_switch_jiaowu"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="20dp"
+                    android:button="@null" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/set_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/lightskyblue"
+                android:orientation="vertical"
+                android:paddingBottom="50dp"
+                android:paddingTop="50dp">
+
+                <TextView
+                    android:id="@+id/set_card_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="校卡中心自动登陆"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:lineSpacingExtra="8sp"
+                    android:padding="20dp"
+                    android:text="@string/set_card_content" />
+
+                <com.codeevery.myElement.MySwitch
+                    android:id="@+id/set_switch_card"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="20dp"
+                    android:button="@null" />
+            </LinearLayout>
+            <!--反馈的模块-->
+            <LinearLayout
+                android:id="@+id/set_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/deep_oriange"
+                android:orientation="vertical"
+                android:paddingBottom="50dp"
+                android:paddingTop="50dp">
+
+                <TextView
+                    android:id="@+id/set_feedback_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="我们期待你的反馈"
+                    android:textColor="@color/snow"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:lineSpacingExtra="8sp"
+                    android:padding="20dp"
+                    android:text="@string/set_feedback_content" />
+
+                <Button
+                    android:id="@+id/set_feedback_submit"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/primary_button"
+                    android:text="我要反馈" />
+            </LinearLayout>
+            <!--关于作者模块-->
+            <LinearLayout
+                android:id="@+id/set_about_me"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/yellow"
+                android:orientation="vertical"
+                android:paddingBottom="40dp"
+                android:paddingTop="30dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="关于作者和小丁丁"
+                    android:textColor="@color/grey"
+                    android:textSize="20sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:lineSpacingExtra="8sp"
+                    android:padding="20dp"
+                    android:text="关于作者和小丁丁的介绍都在这里 点击看看吧" />
+                <Button
+                    android:id="@+id/set_about_me_button"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/primary_button"
+                    android:text="看一看" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/my_action_title" />
+</FrameLayout><!-- From: file:/Volumes/MACWIN/zzudingding/app/src/main/res/layout/set_layout.xml -->

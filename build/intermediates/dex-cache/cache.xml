@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Volumes/备用/AndroidStudio/zzudingding/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="/Volumes/备用/AndroidStudio/zzudingding/app/build/intermediates/pre-dexed/debug/classes-66a61759767a153bd3f30c69d74cb545a43af46e.jar" />
+    </item>
+    <item
+        jar="/Volumes/备用/AndroidStudio/zzudingding/app/libs/yunba-sdk-release1.4.5.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e68c71b9b97762c9c4cde628bd80a8271bba3eb2">
+        <dex dex="/Volumes/备用/AndroidStudio/zzudingding/app/build/intermediates/pre-dexed/debug/yunba-sdk-release1.4.5-34a7a3a03d09376586a09c5989f3b8c4ddfd1f74.jar" />
+    </item>
+    <item
+        jar="/Volumes/MACWIN/zzudingding/app/libs/Volley.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="2dd908289a096a92b5f266cefb6c1bda32762cef">
+        <dex dex="/Volumes/MACWIN/zzudingding/app/build/intermediates/pre-dexed/debug/Volley-87a464cc8ed288053b5914f81790e427bd673466.jar" />
+    </item>
+    <item
+        jar="/Volumes/MACWIN/zzudingding/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="/Volumes/MACWIN/zzudingding/app/build/intermediates/pre-dexed/debug/classes-bb80fee6a815dd69d4c2912079b75fea4612d6bb.jar" />
+    </item>
+    <item
+        jar="/Volumes/MACWIN/zzudingding/app/libs/yunba-sdk-release1.4.5.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e68c71b9b97762c9c4cde628bd80a8271bba3eb2">
+        <dex dex="/Volumes/MACWIN/zzudingding/app/build/intermediates/pre-dexed/debug/yunba-sdk-release1.4.5-b7ecc1c9a19fbb5b4bfa01d9505cda39502f28a7.jar" />
+    </item>
+    <item
+        jar="/Volumes/MACWIN/zzudingding/app/libs/additionnal.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="bd9e8dc422bb8c8405359947fe9f4282b49f57f4">
+        <dex dex="/Volumes/MACWIN/zzudingding/app/build/intermediates/pre-dexed/debug/additionnal-b86164afd53d14b43f3fb178797d5b92770a1dd7.jar" />
+    </item>
+    <item
+        jar="/Volumes/MACWIN/zzudingding/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/libs/internal_impl-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="/Volumes/MACWIN/zzudingding/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.1-d76552bcbed310749381e1ee4538d3a6038b81b2.jar" />
+    </item>
+    <item
+        jar="/Volumes/MACWIN/zzudingding/app/libs/activation.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d1257cbff6faa44c1f325ae0d9413522d4644383">
+        <dex dex="/Volumes/MACWIN/zzudingding/app/build/intermediates/pre-dexed/debug/activation-89a4599adba632bfc37012c7926a53c4b8e1dd57.jar" />
+    </item>
+    <item
+        jar="/Volumes/备用/AndroidStudio/zzudingding/app/libs/gson.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="/Volumes/备用/AndroidStudio/zzudingding/app/build/intermediates/pre-dexed/debug/gson-9aa9ebe56023eafedc182fa06e1efd9cab29d6f1.jar" />
+    </item>
+    <item
+        jar="/Volumes/MACWIN/zzudingding/app/libs/gson.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="/Volumes/MACWIN/zzudingding/app/build/intermediates/pre-dexed/debug/gson-7a78b1566883e54d698b6a7c8bf60686c0fd4259.jar" />
+    </item>
+    <item
+        jar="/Volumes/备用/AndroidStudio/zzudingding/app/libs/Volley.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="2dd908289a096a92b5f266cefb6c1bda32762cef">
+        <dex dex="/Volumes/备用/AndroidStudio/zzudingding/app/build/intermediates/pre-dexed/debug/Volley-4cf8e7a0312e9f779857a12495c41993dbe990b2.jar" />
+    </item>
+    <item
+        jar="/Volumes/备用/AndroidStudio/zzudingding/app/libs/jsoup-1.8.2.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="580e4dd2a6125cc4037450b40623ac6a552c11df">
+        <dex dex="/Volumes/备用/AndroidStudio/zzudingding/app/build/intermediates/pre-dexed/debug/jsoup-1.8.2-df9da86f508b1d8dc5049e9070466f4057bab814.jar" />
+    </item>
+    <item
+        jar="/Users/songchao/Documents/android-sdk-macosx/extras/android/m2repository/com/android/support/support-annotations/22.2.1/support-annotations-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="/Volumes/备用/AndroidStudio/zzudingding/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.1-cd913fda28b955349884b7331e354b5ffc069db6.jar" />
+    </item>
+    <item
+        jar="/Volumes/MACWIN/zzudingding/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="/Volumes/MACWIN/zzudingding/app/build/intermediates/pre-dexed/debug/classes-11f46494c378a829484421d8b2781a842982b1aa.jar" />
+    </item>
+    <item
+        jar="/Volumes/MACWIN/zzudingding/app/libs/jsoup-1.8.2.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="580e4dd2a6125cc4037450b40623ac6a552c11df">
+        <dex dex="/Volumes/MACWIN/zzudingding/app/build/intermediates/pre-dexed/debug/jsoup-1.8.2-cbf0d7a79a7072cb0e2051510c5a3e4a2c2bccc6.jar" />
+    </item>
+    <item
+        jar="/Volumes/备用/AndroidStudio/zzudingding/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="/Volumes/备用/AndroidStudio/zzudingding/app/build/intermediates/pre-dexed/debug/classes-8cfb4693c970ab676672dc3f2718381e13381b1c.jar" />
+    </item>
+    <item
+        jar="/Volumes/MACWIN/zzudingding/app/libs/mail.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="428e267abff0d10802ccde86b915da2c20471160">
+        <dex dex="/Volumes/MACWIN/zzudingding/app/build/intermediates/pre-dexed/debug/mail-5cad46d3627571caab84676787545f116da71b56.jar" />
+    </item>
+    <item
+        jar="/Volumes/备用/AndroidStudio/zzudingding/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/libs/internal_impl-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="/Volumes/备用/AndroidStudio/zzudingding/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.1-5806d1a20cc442622fea00cbfb90920cf3819539.jar" />
+    </item>
+
+</items>

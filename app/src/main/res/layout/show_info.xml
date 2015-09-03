@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/my_action_title"/>
+    <com.codeevery.myElement.LoadMoreListView
+        android:id="@+id/show_info_listview"
+        android:layout_below="@+id/topRelative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutAnimation="@anim/news_search_anim">
+    </com.codeevery.myElement.LoadMoreListView>
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/my_action_title"/>
+    <EditText
+        android:id="@+id/feed_back_content"
+        android:gravity="left"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:hint="@string/feed_back_content_hint"
+        android:background="@drawable/border"/>
+    <Button
+        android:id="@+id/feed_back_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发送"
+        android:background="@drawable/primary_button"/>
+
+</LinearLayout>

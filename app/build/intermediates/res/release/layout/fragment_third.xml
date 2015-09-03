@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/fragment3_button1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="120dp"
+            android:layout_marginRight="1dp"
+            android:layout_gravity="center_horizontal"
+            android:text="校网黑名单"
+            android:background="@drawable/imgtextbutton"/>
+
+        <Button
+            android:id="@+id/fragment3_button2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="120dp"
+            android:text="图书馆座位预约"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/imgtextbutton"/>
+        <Button
+            android:id="@+id/fragment3_button3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="120dp"
+            android:text="新生分班查询"
+            android:background="@drawable/imgtextbutton"/>
+    </LinearLayout>
+</LinearLayout><!-- From: file:/Volumes/MACWIN/zzudingding/app/src/main/res/layout/fragment_third.xml -->
