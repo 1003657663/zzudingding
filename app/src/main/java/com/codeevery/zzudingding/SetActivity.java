@@ -25,6 +25,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -177,21 +178,27 @@ public class SetActivity extends Activity {
             topLoginButton.setVisibility(View.VISIBLE);
             topName.setVisibility(View.GONE);
             topXuehao.setVisibility(View.GONE);
-            topLoginButton.setOnClickListener(v -> {
-                Intent intent = new Intent();
-                intent.setClass(SetActivity.this, LoginActivity.class);
-                startActivity(intent);
+            topLoginButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent();
+                    intent.setClass(SetActivity.this, LoginActivity.class);
+                    startActivity(intent);
+                }
             });
         }
 
-        jiaowuLogin.setOnClickListener(v -> {
-            if (setting.isLoginSuccess) {
-                setting.isLoginSuccess = false;
-                changeColorAni(jiaowuResetLayout, R.color.lightblue, R.color.snow, 21);
-            } else {
-                Intent intent = new Intent();
-                intent.setClass(SetActivity.this, LoginActivity.class);
-                startActivity(intent);
+        jiaowuLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (setting.isLoginSuccess) {
+                    setting.isLoginSuccess = false;
+                    changeColorAni(jiaowuResetLayout, R.color.lightblue, R.color.snow, 21);
+                } else {
+                    Intent intent = new Intent();
+                    intent.setClass(SetActivity.this, LoginActivity.class);
+                    startActivity(intent);
+                }
             }
         });
 
@@ -205,14 +212,17 @@ public class SetActivity extends Activity {
             cardResetLayout.setBackgroundResource(R.color.snow);
         }
 
-        cardLogin.setOnClickListener(v -> {
-            if (setting.isCardLoginSuccess) {
-                setting.isCardLoginSuccess = false;
-                changeColorAni(cardResetLayout, R.color.light_indigo, R.color.snow, 31);
-            } else {
-                Intent intent = new Intent();
-                intent.setClass(SetActivity.this, FoodcardLoginActivity.class);
-                startActivity(intent);
+        cardLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (setting.isCardLoginSuccess) {
+                    setting.isCardLoginSuccess = false;
+                    changeColorAni(cardResetLayout, R.color.light_indigo, R.color.snow, 31);
+                } else {
+                    Intent intent = new Intent();
+                    intent.setClass(SetActivity.this, FoodcardLoginActivity.class);
+                    startActivity(intent);
+                }
             }
         });
 
@@ -484,18 +494,25 @@ public class SetActivity extends Activity {
         LinearLayout linearLayout = (LinearLayout) getLayoutInflater().inflate(R.layout.option_dialog,null);
         Button changePhoto = new Button(SetActivity.this);
         Button myInfo = new Button(SetActivity.this);
+        Button close = new Button(SetActivity.this);
         myInfo.setText("查看个人信息");
         changePhoto.setText("更改头像");
+        close.setText("关闭");
         myInfo.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
         changePhoto.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+        close.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
         myInfo.setGravity(View.TEXT_ALIGNMENT_CENTER);
         changePhoto.setGravity(View.TEXT_ALIGNMENT_CENTER);
+        close.setGravity(Gravity.CENTER);
         myInfo.setPadding(20, 40, 20, 40);
         changePhoto.setPadding(20, 40, 20, 40);
+        close.setPadding(20, 40, 20, 20);
         myInfo.setBackgroundResource(R.drawable.background);
         changePhoto.setBackgroundResource(R.drawable.background);
+        close.setBackgroundResource(R.drawable.background);
         linearLayout.addView(myInfo);
         linearLayout.addView(changePhoto);
+        linearLayout.addView(close);
         AlertDialog.Builder builder = new AlertDialog.Builder(SetActivity.this);
         builder.setView(linearLayout);
         final AlertDialog optionDialog = builder.create();
@@ -520,6 +537,12 @@ public class SetActivity extends Activity {
                 intent.setType("image/*");
                 intent.setAction(Intent.ACTION_GET_CONTENT);
                 startActivityForResult(intent, IMAGE_REQUEST_CODE);
+            }
+        });
+        close.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                optionDialog.cancel();
             }
         });
         optionDialog.show();

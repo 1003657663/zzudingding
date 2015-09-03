@@ -42,7 +42,12 @@ public class GetRoomNumber extends Activity implements DoPostGet.DoSomeThing{
 
         //初始化
         back = (ImageButton) findViewById(R.id.back);
-        back.setOnClickListener(v -> finish());
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         title = (TextView) findViewById(R.id.title);
         title.setText("新生班级查询");
         editText = (EditText) findViewById(R.id.show_room_edit);
@@ -55,17 +60,23 @@ public class GetRoomNumber extends Activity implements DoPostGet.DoSomeThing{
         year =  mCalendar.get(Calendar.YEAR);
         textView.setText("年级：" + year);
         final String url = "http://jw.zzu.edu.cn/scripts/newstu.dll/cx";
-        button.setOnClickListener(v -> {
-            String number = editText.getText().toString();
-            if(number.equals("")){
-                Toast.makeText(GetRoomNumber.this,"输入不能为空",Toast.LENGTH_SHORT).show();
-                return;
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String number = editText.getText().toString();
+                if(number.equals(""))
+
+                {
+                    Toast.makeText(GetRoomNumber.this, "输入不能为空", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                Map<String, String> map = new HashMap<>();
+                map.put("nj",year+"");
+                map.put("sfzh",number);
+                map.put("xkstep","1");
+                doPostGet.doPost(url,"gb2312",map);
             }
-            Map<String,String> map =  new HashMap<>();
-            map.put("nj",year+"");
-            map.put("sfzh",number);
-            map.put("xkstep","1");
-            doPostGet.doPost(url,"gb2312",map);
         });
     }
 

@@ -30,7 +30,12 @@ public class MyInfo extends Activity implements myDialog.SureButton{
         title = (TextView) findViewById(R.id.title);
         title.setText("个人信息");
         back = (ImageButton) findViewById(R.id.back);
-        back.setOnClickListener(v -> finish());
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         content = (WebView) findViewById(R.id.my_info_webview);
         if(setting.webStr.equals("")){
             dialog.setSureButton(this);

@@ -60,7 +60,12 @@ public class ShowInfoMore extends Activity implements DoPostGet.DoSomeThing, myD
 
         jumpButton = (ImageButton) findViewById(R.id.jump_to_chrome);
         backButton = (ImageButton) findViewById(R.id.show_info_backbutton);
-        backButton.setOnClickListener(v -> finish());
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         final Intent intent = getIntent();
         this.url = intent.getStringExtra("moreInfoUrl");
         this.charaset = intent.getStringExtra("charaset");
@@ -74,12 +79,15 @@ public class ShowInfoMore extends Activity implements DoPostGet.DoSomeThing, myD
         doPostGet.setInterface(this);
         doPostGet.doGet(url, charaset);
 
-        jumpButton.setOnClickListener(v -> {
-            Intent intent1 = new Intent();
-            intent1.setAction(Intent.ACTION_VIEW);
-            Uri uri = Uri.parse(url);
-            intent1.setData(uri);
-            startActivity(intent1);
+        jumpButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = new Intent();
+                intent1.setAction(Intent.ACTION_VIEW);
+                Uri uri = Uri.parse(url);
+                intent1.setData(uri);
+                startActivity(intent1);
+            }
         });
     }
     class WebClient extends WebViewClient{
