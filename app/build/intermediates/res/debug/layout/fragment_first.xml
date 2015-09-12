@@ -19,22 +19,14 @@
                 android:id="@+id/check_grade"
                 android:layout_width="0dp"
                 android:layout_height="120dp"
-<<<<<<< HEAD
                 android:layout_marginRight="2px"
-=======
-                android:layout_marginRight="1px"
->>>>>>> f0ab609734f33157649664b1a6507e1068abdb6a
                 android:layout_weight="1" />
 
             <com.codeevery.myElement.TextImgButton
                 android:id="@+id/check_empty_room"
                 android:layout_width="0dp"
                 android:layout_height="120dp"
-<<<<<<< HEAD
                 android:layout_marginRight="2px"
-=======
-                android:layout_marginRight="1px"
->>>>>>> f0ab609734f33157649664b1a6507e1068abdb6a
                 android:layout_weight="1" />
 
             <com.codeevery.myElement.TextImgButton
@@ -48,22 +40,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-<<<<<<< HEAD
             android:layout_marginTop="2px">
-=======
-            android:layout_marginTop="1px">
->>>>>>> f0ab609734f33157649664b1a6507e1068abdb6a
 
             <TableRow>
                 <com.codeevery.myElement.TextImgRightButton
                     android:id="@+id/get_lost_thing"
                     android:layout_width="0dp"
                     android:layout_height="80dp"
-<<<<<<< HEAD
                     android:layout_marginRight="2px"
-=======
-                    android:layout_marginRight="1px"
->>>>>>> f0ab609734f33157649664b1a6507e1068abdb6a
                     android:layout_weight="1" />
             </TableRow>
         </TableLayout>

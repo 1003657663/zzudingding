@@ -86,19 +86,11 @@
       <excludeFolder url="file://$MODULE_DIR$/build/outputs" />
       <excludeFolder url="file://$MODULE_DIR$/build/tmp" />
     </content>
-<<<<<<< HEAD
     <orderEntry type="jdk" jdkName="Android API 22 Platform (2)" jdkType="Android SDK" />
-=======
-    <orderEntry type="jdk" jdkName="Android API 22 Platform (1)" jdkType="Android SDK" />
->>>>>>> f0ab609734f33157649664b1a6507e1068abdb6a
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="mail" level="project" />
     <orderEntry type="library" exported="" name="gson" level="project" />
     <orderEntry type="library" exported="" name="support-v4-22.2.1" level="project" />
-<<<<<<< HEAD
-=======
-    <orderEntry type="library" exported="" name="support-v4-22.2.1-sources" level="project" />
->>>>>>> f0ab609734f33157649664b1a6507e1068abdb6a
     <orderEntry type="library" exported="" name="additionnal" level="project" />
     <orderEntry type="library" exported="" name="Volley" level="project" />
     <orderEntry type="library" exported="" name="support-annotations-22.2.1" level="project" />

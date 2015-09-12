@@ -21,31 +21,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TableRow
-<<<<<<< HEAD
                 android:layout_marginBottom="2px">
-=======
-                android:layout_marginBottom="1px">
->>>>>>> f0ab609734f33157649664b1a6507e1068abdb6a
                 <com.codeevery.myElement.TextImgButton
                     android:id="@+id/second_button1"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="120dp"
-<<<<<<< HEAD
                     android:layout_marginRight="2px"/>
-=======
-                    android:layout_marginRight="1px"/>
->>>>>>> f0ab609734f33157649664b1a6507e1068abdb6a
                 <com.codeevery.myElement.TextImgButton
                     android:id="@+id/second_button2"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="120dp"
-<<<<<<< HEAD
                     android:layout_marginRight="2px"/>
-=======
-                    android:layout_marginRight="1px"/>
->>>>>>> f0ab609734f33157649664b1a6507e1068abdb6a
                 <com.codeevery.myElement.TextImgButton
                     android:id="@+id/second_button3"
                     android:layout_width="0dp"
@@ -58,21 +46,13 @@
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="120dp"
-<<<<<<< HEAD
                     android:layout_marginRight="2px"/>
-=======
-                    android:layout_marginRight="1px"/>
->>>>>>> f0ab609734f33157649664b1a6507e1068abdb6a
                 <com.codeevery.myElement.TextImgButton
                     android:id="@+id/second_button5"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="120dp"
-<<<<<<< HEAD
                     android:layout_marginRight="2px"/>
-=======
-                    android:layout_marginRight="1px"/>
->>>>>>> f0ab609734f33157649664b1a6507e1068abdb6a
                 <com.codeevery.myElement.TextImgButton
                     android:id="@+id/second_button6"
                     android:layout_width="0dp"

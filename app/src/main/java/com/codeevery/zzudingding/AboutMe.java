@@ -16,10 +16,6 @@ import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
 import com.codeevery.NetGetPost.DoPostGet;
 import com.codeevery.myElement.myDialog;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.ImageButton;
-import android.widget.RelativeLayout;
 
 /**
  * Created by songchao on 15/8/8.
@@ -28,12 +24,8 @@ import android.widget.RelativeLayout;
 public class AboutMe extends Activity implements DoPostGet.DoSomeThing,myDialog.SureButton{
     RelativeLayout relativeLayout;
     ImageButton back;
-
     Button update;
     myDialog dialog;
-public class AboutMe extends Activity {
-    RelativeLayout relativeLayout;
-    ImageButton back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,8 +35,6 @@ public class AboutMe extends Activity {
         relativeLayout = (RelativeLayout) findViewById(R.id.topRelative);
         back = (ImageButton) findViewById(R.id.back);
         update = (Button) findViewById(R.id.check_update);
-        relativeLayout = (RelativeLayout) findViewById(R.id.topRelative);
-        back = (ImageButton) findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
