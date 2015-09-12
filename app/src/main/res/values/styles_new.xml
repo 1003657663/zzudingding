@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Mactionbar" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:background">#000000</item>
+    </style>
+</resources>

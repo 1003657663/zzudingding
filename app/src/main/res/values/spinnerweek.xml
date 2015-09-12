@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_week">
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+        <item>星期日</item>
+    </string-array>
+    <string-array name="sqinner_class">
+        <item>上午1-2节</item>
+        <item>上午3-4节</item>
+        <item>下午5-6节</item>
+        <item>下午7-8节</item>
+        <item>晚上9-10节</item>
+    </string-array>
+</resources>

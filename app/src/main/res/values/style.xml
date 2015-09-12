@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Search_Edit" parent="Widget.AppCompat.EditText">
+        <item name="android:editTextPreferenceStyle">@drawable/abc_ic_ab_back_mtrl_am_alpha</item>
+    </style>
+</resources>

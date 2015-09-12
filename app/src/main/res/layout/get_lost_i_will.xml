@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/ab_bottom_solid_myactionbar">
+
+        <ImageButton
+            android:id="@+id/get_lost_will_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/back_to" />
+
+        <TextView
+            android:id="@+id/get_lost_will_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="我要招领"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="标题*" />
+
+            <EditText
+                android:id="@+id/get_will_edit_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="5-30个字符"
+                android:maxEms="30"
+                android:minEms="5"
+                android:paddingBottom="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="地址* " />
+
+            <EditText
+                android:id="@+id/get_will_edit_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="5-150个字符"
+                android:paddingBottom="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="联系人* " />
+
+            <EditText
+                android:id="@+id/get_will_edit_contactpeople"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="2-10个汉字"
+                android:inputType="text"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="电话*" />
+
+            <EditText
+                android:id="@+id/get_will_edit_phonenum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="11"
+                android:inputType="number"
+                android:paddingBottom="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="QQ" />
+
+            <EditText
+                android:id="@+id/get_will_edit_qq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:paddingBottom="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="电子邮件*" />
+
+            <EditText
+                android:id="@+id/get_will_edit_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:paddingBottom="10dp" />
+            <TextView
+                android:id="@+id/get_will_xuehaoDes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="对方学号"/>
+            <EditText
+                android:id="@+id/get_will_xuehao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:hint="不知道可不填"/>
+            <TextView
+                android:id="@+id/get_will_nameDes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="对方名字"/>
+            <EditText
+                android:id="@+id/get_will_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:hint="不知道可不填"/>
+            <TextView
+                android:id="@+id/get_lost_will_descripe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="描述*" />
+
+            <EditText
+                android:id="@+id/get_will_edit_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:gravity="start"
+                android:minHeight="150dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/get_will_submit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/primary_button"
+        android:text="提交" />
+
+</LinearLayout>

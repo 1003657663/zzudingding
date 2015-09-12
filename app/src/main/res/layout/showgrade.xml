@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/grade_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="@drawable/ab_bottom_solid_myactionbar">
+
+            <ImageButton
+                android:id="@+id/grade_back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:src="@drawable/back_to"
+                android:paddingRight="15dp"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/the_grade_all"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:scrollHorizontally="false"/>
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/show_grade_table_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border">
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>
+
+

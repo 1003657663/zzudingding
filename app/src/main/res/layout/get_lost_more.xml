@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/ab_bottom_solid_myactionbar">
+        <ImageButton
+            android:id="@+id/lost_more_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/back_to"
+            android:background="@color/transparent"/>
+        <TextView
+            android:id="@+id/lost_more_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="25dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:text="物品描述:"
+            android:textSize="17sp"/>
+        <TextView
+            android:id="@+id/lost_more_textcontent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:textSize="15sp"/>
+        <TextView
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="联系方式:"
+            android:textSize="17sp"/>
+
+
+
+        <TextView
+            android:id="@+id/lost_more_text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/lost_more_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/lost_more_text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/lost_more_text4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/lost_more_text5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+</LinearLayout>

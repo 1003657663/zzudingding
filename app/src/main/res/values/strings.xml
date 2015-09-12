@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">郑大小丁丁</string>
+
+    <string name="title_section1">查询</string>
+    <string name="title_section2">资讯</string>
+    <string name="title_section3">工具</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="action_settings">设置</string>
+
+
+
+    <string name="no_internet">你的网络有问题或者连接失败啦</string>
+    <string name="generic_server_down">服务器好像出问题了</string>
+    <string name="generic_error">网络异常啦，稍后，稍后哦</string>
+    <string name="set_feedback_content">你喜欢我做的软件吗?\n你有什么好的建议吗？\n你对哪个功能不满意呢？\n你希望添加什么功能?\n你希望界面如何美化？\n你喜欢哪个功能?\n反馈给我们吧!</string>
+    <string name="set_card_content">是否自动登陆校卡中心?\n可以随时查看饭卡余额和消费记录,校卡中心每次登陆有效时间只有20分钟哦</string>
+    <string name="set_jiaowu_content">是否自动登陆教务中心?\n可以随时查看成绩和空教室,但是会消耗一定流量</string>
+    <string name="feed_back_content_hint">您对小丁丁有什么建议或者表彰(坏笑)吗?\n您遇到什么漏洞了吗？\n(难道是程序莫名跳出？)(惊讶)\n您对界面美化有什么好的提议吗？\n\n尽管畅所欲言,我们会给您回复的哦</string>
+    <string name="about_me_zhaopin">开发辛苦,如果想要给作者小小的报酬,支付宝账号就是上面的邮箱,1元2元也不介意哦\n\n开发历时近两个月，略累，现缺美工和维护人员(帮忙推送置顶消息)，如果有人要加入，热烈欢迎哦</string>
+    <string name="about_me_update1_3">版本1.3:更新了一些bug,和分辨率适配的问题</string>
+    <string name="about_me_update1_2">功能：额,自己看吧\n我会持续更新的,如果碰到意外跳出的情况还请多多反馈啦，第一个版本，可能会有所漏洞，有人问版本号为啥1.2？哦，1.2比较成熟好听点吧，哈哈\n介绍一下比较特殊的功能吧，在置顶消息中会不定期推送我们学校的重要消息。查饭卡余额的时候有可能会出现登陆成功但查不到信息的情况，过10秒左右再查就好了，或者注销了重新登陆。关于头像，是存在本地的，你们可以选择喜欢的图片啦，自己的照片也可以啦</string>
+    <string name="about_me_update1_4">版本1.4:修复了高分屏的显示问题，反馈的稳定性，添加了更新检查等等</string>
+</resources>

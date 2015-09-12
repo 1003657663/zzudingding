@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/empty_root_top_view"
+        android:background="@drawable/ab_bottom_solid_myactionbar">
+        <ImageButton
+            android:id="@+id/empty_room_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:src="@drawable/back_to"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"/>
+        <Button
+            android:id="@+id/empty_room_start"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:text="开始查询"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_with_border" />
+    </RelativeLayout>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/spinner_week"
+        android:layout_below="@+id/empty_root_top_view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/spinner_class"
+        android:layout_below="@+id/spinner_week"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <ScrollView
+        android:layout_below="@+id/spinner_class"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableLayout
+            android:id="@+id/empty_room_table"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </TableLayout>
+    </ScrollView>
+</RelativeLayout>

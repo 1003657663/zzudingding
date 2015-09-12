@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/out_login_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.codeevery.myElement.TextImgButton
+                android:id="@+id/check_grade"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_marginRight="1px"
+                android:layout_weight="1" />
+
+            <com.codeevery.myElement.TextImgButton
+                android:id="@+id/check_empty_room"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_marginRight="1px"
+                android:layout_weight="1" />
+
+            <com.codeevery.myElement.TextImgButton
+                android:id="@+id/change_password_main_button"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="1px">
+
+            <TableRow>
+                <com.codeevery.myElement.TextImgRightButton
+                    android:id="@+id/get_lost_thing"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_marginRight="1px"
+                    android:layout_weight="1" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.codeevery.myElement.TextImgRightButton
+            android:id="@+id/food_card_money"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1" />
+
+        <com.codeevery.myElement.TextImgRightButton
+            android:id="@+id/food_card_spend_money"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout><!-- From: file:/Volumes/MACWIN/zzudingding/app/src/main/res/layout/fragment_first.xml -->

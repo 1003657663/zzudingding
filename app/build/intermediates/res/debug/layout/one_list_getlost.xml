@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/one_list_getlost_title"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:textSize="17sp"
+        android:textColor="#333333"
+        android:text="见到一张发卡你就发了卡就放了的空间撒"/>
+    <TextView
+        android:id="@+id/one_list_getlost_time"
+        android:layout_below="@+id/one_list_getlost_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/secondary_text"
+        android:text="2015-08-09 23:05:56"/>
+    <TextView
+        android:id="@+id/one_list_getlost_response"
+        android:layout_below="@+id/one_list_getlost_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/secondary_text"
+        android:text="阅读/回复 44/0"/>
+
+</RelativeLayout><!-- From: file:/Volumes/MACWIN/zzudingding/app/src/main/res/layout/one_list_getlost.xml -->

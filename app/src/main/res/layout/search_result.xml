@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="2dp"
+        android:background="@drawable/ab_bottom_solid_myactionbar">
+        <ImageButton
+            android:id="@+id/search_result_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/back_to"
+            android:background="@color/transparent"/>
+        <EditText
+            android:id="@+id/search_text"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:background="@drawable/search_fra"/>
+        <Button
+            android:id="@+id/search_button_in"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:text="搜索"
+            android:textSize="10sp" />
+        <Button
+            android:id="@+id/search_high"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="高级搜索"
+            android:textSize="10sp" />
+    </LinearLayout>
+    <com.codeevery.myElement.LoadMoreListView
+        android:id="@+id/book_listView"
+        android:divider="#000f55"
+        android:dividerHeight="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fastScrollEnabled="false"
+        android:scrollbars="none"
+        android:layoutAnimation="@anim/book_search_anim">
+    </com.codeevery.myElement.LoadMoreListView>
+</LinearLayout>
