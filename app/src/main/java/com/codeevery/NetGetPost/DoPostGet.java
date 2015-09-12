@@ -41,7 +41,11 @@ public class DoPostGet{
 
     RequestQueue requestQueue;
     public void doGet(String url,final String charase){
+<<<<<<< HEAD
         dialog.showProgressDialog("正在获取数据...");
+=======
+        dialog.showProgressDialog("正在加载数据...");
+>>>>>>> f0ab609734f33157649664b1a6507e1068abdb6a
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String s) {

@@ -3,8 +3,11 @@ package com.codeevery.zzudingding;
 import android.app.Activity;
 import android.os.AsyncTask;
 import android.os.Bundle;
+<<<<<<< HEAD
 import android.os.Handler;
 import android.os.Message;
+=======
+>>>>>>> f0ab609734f33157649664b1a6507e1068abdb6a
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -44,6 +47,7 @@ public class FeedBack extends Activity {
                 finish();
             }
         });
+<<<<<<< HEAD
         final Handler handler = new Handler(){
             @Override
             public void handleMessage(Message msg) {
@@ -57,6 +61,8 @@ public class FeedBack extends Activity {
                 }
             }
         };
+=======
+>>>>>>> f0ab609734f33157649664b1a6507e1068abdb6a
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -68,9 +74,41 @@ public class FeedBack extends Activity {
                     dialog.showDialogWithSure("再多给点建议吧,5个字以内太少了啊","好的");
                     return;
                 }
+<<<<<<< HEAD
                 new SendEmailMain("小丁丁 反馈",contentText,setting.xuehao,handler).start();
                 dialog.showProgressDialog("正在发送..");
             }
         });
     }
+=======
+                new SendEmailMain("小丁丁 反馈",contentText,setting.xuehao).start();
+                Task task = new Task(dialog);
+                dialog.showProgressDialog("正在发送..");
+                task.execute();
+            }
+        });
+    }
+
+    class Task extends AsyncTask {
+        myDialog dialog;
+        public Task(myDialog dialog){
+            this.dialog = dialog;
+        }
+        @Override
+        protected Object doInBackground(Object[] params) {
+            try {
+                Thread.sleep(2500);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(Object o) {
+            dialog.hideProgressDialog();
+            dialog.showDialogWithSure("发送成功,我们会给您回复的,谢谢您的反馈","确定");
+        }
+    };
+>>>>>>> f0ab609734f33157649664b1a6507e1068abdb6a
 }

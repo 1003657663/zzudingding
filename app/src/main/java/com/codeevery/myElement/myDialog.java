@@ -71,12 +71,22 @@ public class myDialog {
         Button sButton = (Button) linearLayout.findViewById(R.id.mydialog_sure_button);
         Button nButton = (Button) linearLayout.findViewById(R.id.mydialog_no_button);
         nButton.setVisibility(View.VISIBLE);
+<<<<<<< HEAD
+=======
+        sButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sureButton.sureButtonDo();
+            }
+        });
+>>>>>>> f0ab609734f33157649664b1a6507e1068abdb6a
         contentText.setText(message);
         sButton.setText(sureButtonText);
         builder = new AlertDialog.Builder(context);
         final AlertDialog alertDialog;
         builder.setView(linearLayout);
         alertDialog = builder.create();
+<<<<<<< HEAD
         sButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -99,6 +109,8 @@ public class myDialog {
                 }
             }
         });
+=======
+>>>>>>> f0ab609734f33157649664b1a6507e1068abdb6a
         alertDialog.show();
     }
 

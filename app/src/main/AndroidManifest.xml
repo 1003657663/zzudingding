@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.codeevery.zzudingding"
+<<<<<<< HEAD
     android:versionName="1.4"
+=======
+    android:versionName="1.3"
+>>>>>>> f0ab609734f33157649664b1a6507e1068abdb6a
     android:versionCode="1">
 
     <application

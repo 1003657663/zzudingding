@@ -4,19 +4,28 @@ import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
 
+<<<<<<< HEAD
 import com.codeevery.NetGetPost.DoPostGet;
+=======
+>>>>>>> f0ab609734f33157649664b1a6507e1068abdb6a
 import com.codeevery.login.SendInfoToService;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+<<<<<<< HEAD
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+=======
+>>>>>>> f0ab609734f33157649664b1a6507e1068abdb6a
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.ConnectivityManager;
+<<<<<<< HEAD
 import android.net.Uri;
+=======
+>>>>>>> f0ab609734f33157649664b1a6507e1068abdb6a
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -37,7 +46,10 @@ import android.widget.Toast;
 
 import com.codeevery.NetGetPost.GetInternetState;
 import com.codeevery.application.AllObject;
+<<<<<<< HEAD
 import com.codeevery.myElement.myDialog;
+=======
+>>>>>>> f0ab609734f33157649664b1a6507e1068abdb6a
 
 import org.eclipse.paho.client.mqttv3.IMqttActionListener;
 import org.eclipse.paho.client.mqttv3.IMqttToken;
@@ -75,13 +87,20 @@ import io.yunba.android.manager.YunBaManager;
 
 
 
+<<<<<<< HEAD
 public class MainActivity extends ActionBarActivity implements ActionBar.TabListener,DoPostGet.DoSomeThing, myDialog.SureButton{
+=======
+public class MainActivity extends ActionBarActivity implements ActionBar.TabListener {
+>>>>>>> f0ab609734f33157649664b1a6507e1068abdb6a
     private SectionsPagerAdapter mSectionsPagerAdapter;
     private ViewPager mViewPager;
     private AllObject setting;
     private GetInternetState getInternetState;//获取网络状态类
     public ActionBar actionBar;
+<<<<<<< HEAD
     private myDialog dialog;
+=======
+>>>>>>> f0ab609734f33157649664b1a6507e1068abdb6a
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -90,7 +109,10 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
 
         //获取Application
         setting = (AllObject) getApplication();
+<<<<<<< HEAD
         dialog = new myDialog(this);
+=======
+>>>>>>> f0ab609734f33157649664b1a6507e1068abdb6a
 
         WindowManager wm = getWindowManager();
         Display display = wm.getDefaultDisplay();
@@ -165,6 +187,7 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
         //默认让actionBar加载第二个界面
         actionBar.setSelectedNavigationItem(1);
         mViewPager.setCurrentItem(1);
+<<<<<<< HEAD
         if(getInternetState.isNetConnected()){
             checkUpdate();
         }
@@ -218,6 +241,10 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
         intent.setData(uri);
         startActivity(intent);
     }
+=======
+    }
+
+>>>>>>> f0ab609734f33157649664b1a6507e1068abdb6a
     //获取设置信息，赋值给静态变量
     public void getSetInfo(){
         //获取sharedpreferences对象

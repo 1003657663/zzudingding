@@ -57,6 +57,7 @@
                 android:paddingTop="20dp"
                 android:text="@string/about_me_zhaopin"
                 android:textColor="@color/secondary_text" />
+<<<<<<< HEAD
             <Button
                 android:id="@+id/check_update"
                 android:layout_marginTop="10dp"
@@ -72,10 +73,13 @@
                 android:paddingTop="10dp"
                 android:text="小丁丁版本1.4"
                 android:textColor="@color/primary" />
+=======
+>>>>>>> f0ab609734f33157649664b1a6507e1068abdb6a
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+<<<<<<< HEAD
                 android:lineSpacingExtra="5sp"
                 android:text="@string/about_me_update1_4"
                 android:textColor="@color/secondary_text" />
@@ -85,6 +89,11 @@
                 android:gravity="center_horizontal"
                 android:paddingBottom="20dp"
                 android:paddingTop="10dp"
+=======
+                android:gravity="center_horizontal"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+>>>>>>> f0ab609734f33157649664b1a6507e1068abdb6a
                 android:text="小丁丁版本1.3"
                 android:textColor="@color/primary" />
 
