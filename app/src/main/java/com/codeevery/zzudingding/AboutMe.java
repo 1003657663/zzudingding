@@ -24,6 +24,7 @@ import com.codeevery.myElement.myDialog;
 public class AboutMe extends Activity implements DoPostGet.DoSomeThing,myDialog.SureButton{
     RelativeLayout relativeLayout;
     ImageButton back;
+
     Button update;
     myDialog dialog;
     @Override
