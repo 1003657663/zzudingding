@@ -247,7 +247,7 @@
                     android:gravity="center"
                     android:lineSpacingExtra="8sp"
                     android:padding="20dp"
-                    android:text="关于作者和小丁丁的介绍都在这里 点击看看吧" />
+                    android:text="进去可以检查更新哦\n关于作者和小丁丁的介绍都在这里 点击看看吧" />
                 <Button
                     android:id="@+id/set_about_me_button"
                     android:layout_width="100dp"

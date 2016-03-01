@@ -14,7 +14,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="120dp"
-            android:layout_marginRight="1dp"
+            android:layout_marginRight="2px"
             android:layout_gravity="center_horizontal"
             android:text="校网黑名单"
             android:background="@drawable/imgtextbutton"/>
@@ -25,7 +25,7 @@
             android:layout_weight="1"
             android:layout_height="120dp"
             android:text="图书馆座位预约"
-            android:layout_marginRight="1dp"
+            android:layout_marginRight="2px"
             android:background="@drawable/imgtextbutton"/>
         <Button
             android:id="@+id/fragment3_button3"

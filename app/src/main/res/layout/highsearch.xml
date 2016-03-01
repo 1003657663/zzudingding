@@ -11,6 +11,11 @@
             android:layout_height="wrap_content"
             android:id="@+id/search_spinner"
             android:spinnerMode="dropdown" />
+        <!--<Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_spin_like"
+            android:spinnerMode="dropdown" />-->
         <RadioGroup
             android:id="@+id/search_radiogroup"
             android:layout_width="wrap_content"

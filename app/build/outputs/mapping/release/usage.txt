@@ -3880,8 +3880,8 @@ com.codeevery.NetGetPost.GetInternetState:
 com.codeevery.NetGetPost.VolleyErrorHelper:
     30:30:public VolleyErrorHelper()
 com.codeevery.application.AllObject:
-    75:77:public void showKeyboard(android.view.View)
-    132:133:public static int dpToPx(android.content.Context,float)
+    76:78:public void showKeyboard(android.view.View)
+    133:134:public static int dpToPx(android.content.Context,float)
 com.codeevery.login.LoginActivity:
     private static android.os.Handler handler
 com.codeevery.login.SendInfoToService:
@@ -3905,12 +3905,9 @@ com.codeevery.myElement.MyGradeScrollView:
     23:26:public MyGradeScrollView(android.content.Context,android.util.AttributeSet,int)
     29:32:public MyGradeScrollView(android.content.Context,android.util.AttributeSet)
 com.codeevery.myElement.myDialog:
-    com.codeevery.myElement.myDialog$NoButton noButton
-    64:87:public void showDialogWithSureAndNo(java.lang.String,java.lang.String,java.lang.String)
-    109:110:public void setNoButton(com.codeevery.myElement.myDialog$NoButton)
-com.codeevery.myElement.myDialog$2
-com.codeevery.myElement.myDialog$NoButton
+    125:126:public void setNoButton(com.codeevery.myElement.myDialog$NoButton)
 com.codeevery.zzudingding.BuildConfig
+com.codeevery.zzudingding.FeedBack$Task
 com.codeevery.zzudingding.MainActivity$PlaceholderFragment
 com.codeevery.zzudingding.R
 com.codeevery.zzudingding.R$anim

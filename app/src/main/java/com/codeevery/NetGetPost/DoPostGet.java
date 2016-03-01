@@ -25,12 +25,19 @@ public class DoPostGet{
     Context context;
     DoSomeThing doSomeThing;
     myDialog dialog;
+    boolean hasDialog = true;
+    boolean needErrorDialog = true;
     public DoPostGet(Context context){
         this.context = context;
         requestQueue = Volley.newRequestQueue(context);
         dialog = new myDialog(context);
     }
-
+    public void setHasDialog(boolean hasDialog){
+        this.hasDialog = hasDialog;
+    }
+    public void setNeedErrorDialog(boolean needErrorDialog){
+        this.needErrorDialog = needErrorDialog;
+    }
     public void setDialogNull(){
         dialog.initProgressDialog();
     }
@@ -41,7 +48,8 @@ public class DoPostGet{
 
     RequestQueue requestQueue;
     public void doGet(String url,final String charase){
-        dialog.showProgressDialog("正在获取数据...");
+        if(hasDialog)
+            dialog.showProgressDialog("正在获取数据...");
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String s) {
@@ -52,7 +60,8 @@ public class DoPostGet{
             @Override
             public void onErrorResponse(VolleyError volleyError) {
                 dialog.hideProgressDialog();
-                Toast.makeText(context,VolleyErrorHelper.getMessage(volleyError,context),Toast.LENGTH_SHORT).show();
+                if(needErrorDialog)
+                    Toast.makeText(context,VolleyErrorHelper.getMessage(volleyError,context),Toast.LENGTH_SHORT).show();
             }
         }){
             @Override
@@ -71,7 +80,8 @@ public class DoPostGet{
     }
 
     public void doPost(String url, final String charase,final Map map){
-        dialog.showProgressDialog("正在加载数据...");
+        if(hasDialog)
+            dialog.showProgressDialog("正在加载数据...");
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String s) {
@@ -82,7 +92,8 @@ public class DoPostGet{
             @Override
             public void onErrorResponse(VolleyError volleyError) {
                 dialog.hideProgressDialog();
-                Toast.makeText(context,VolleyErrorHelper.getMessage(volleyError,context),Toast.LENGTH_SHORT).show();
+                if(needErrorDialog)
+                    Toast.makeText(context,VolleyErrorHelper.getMessage(volleyError,context),Toast.LENGTH_SHORT).show();
             }
         }){
             @Override

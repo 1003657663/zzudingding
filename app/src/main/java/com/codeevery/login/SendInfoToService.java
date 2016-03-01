@@ -70,8 +70,10 @@ public class SendInfoToService {
             @Override
             public void onResponse(String s) {
                 //发送成功写入文件
-                editor.putBoolean("sendTo",true);
-                editor.commit();
+                if(s.equals("yes")) {
+                    editor.putBoolean("sendTo", true);
+                    editor.commit();
+                }
             }
         },new Response.ErrorListener(){
             @Override

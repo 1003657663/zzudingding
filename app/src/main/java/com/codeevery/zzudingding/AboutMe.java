@@ -11,6 +11,7 @@ import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
@@ -83,6 +84,8 @@ public class AboutMe extends Activity implements DoPostGet.DoSomeThing,myDialog.
         //newVersion = 1.4f;
         if(newVersion>version){
             dialog.showDialogWithSureAndNo("发现新版本:"+newVersion+" 是否更新？","更新","下次再说");
+        }else{
+            Toast.makeText(AboutMe.this,"您的应用已经是最新版本",Toast.LENGTH_SHORT).show();
         }
     }
 

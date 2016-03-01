@@ -70,6 +70,21 @@
                 android:gravity="center_horizontal"
                 android:paddingBottom="20dp"
                 android:paddingTop="10dp"
+                android:text="小丁丁版本1.5"
+                android:textColor="@color/primary" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="5sp"
+                android:text="@string/about_me_update1_5"
+                android:textColor="@color/secondary_text" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="20dp"
+                android:paddingTop="10dp"
                 android:text="小丁丁版本1.4"
                 android:textColor="@color/primary" />
 

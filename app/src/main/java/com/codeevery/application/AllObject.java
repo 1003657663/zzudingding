@@ -48,7 +48,8 @@ public class AllObject extends Application {
     public boolean needReadSet = true;
     public boolean yunBaSendTo = false;
 
-    public String urlDatabase = "http://www.codeevery.com/dingding/MyServlet";//数据库服务器url
+    //public String urlDatabase = "http://www.codeevery.com/dingding/MyServlet";//数据库服务器url
+    public String urlDatabase = "http://139.129.24.149/dingding/MyServlet";
     final public String emptyRoomUrl = "http://jw.zzu.edu.cn/scripts/freeroom/freeroom.dll/mylogin";//查询空教室的post请求网址
     final public String changePasswordUrl = "http://jw.zzu.edu.cn/scripts/ChnPW.dll/student";
 

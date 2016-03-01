@@ -310,6 +310,8 @@ public class tabFragment2 extends Fragment implements DoPostGet.DoSomeThing{
     private void getNewsFirst(){
         String url = "http://www16.zzu.edu.cn/msgs/vmsgisapi.dll/vmsglist?mtype=m&lan=101,102,103";
         String charaset = "utf-8";
+        doPostGet.setHasDialog(false);
+        doPostGet.setNeedErrorDialog(false);
         doPostGet.doGet(url, charaset);
     }
 

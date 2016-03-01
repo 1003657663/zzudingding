@@ -149,7 +149,7 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
             // Create a tab with text corresponding to the page title defined by
             // the adapter. Also specify this Activity object, which implements
             // the TabListener interface, as the callback (listener) for when
-            // this tab is selected.
+            // this tab is selecte d.
             actionBar.addTab(
                     actionBar.newTab()
                             .setText(mSectionsPagerAdapter.getPageTitle(i))
@@ -174,6 +174,8 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
     private void checkUpdate(){
         DoPostGet doPostGet = new DoPostGet(this);
         doPostGet.setInterface(this);
+        doPostGet.setHasDialog(false);
+        doPostGet.setNeedErrorDialog(false);
         String url = "http://www.codeevery.com/dingding/update";
         //String url = "http://www.baidu.com";
         String chaset = "utf-8";

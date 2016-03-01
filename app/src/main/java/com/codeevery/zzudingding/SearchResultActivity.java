@@ -55,13 +55,16 @@ public class SearchResultActivity extends Activity implements LoadMoreListView.I
     private String search;
     private String language;
     private int searchType;
+    //private int searchLike;
     private String searchTypeString;
+    //private String searchLikeString;
     private ImageButton back;
     private Button searchButton;
     private EditText searchText;
     private Button searchHighButton;
     private LinearLayout linearLayout;
     private Spinner searchSpinner;
+    //private Spinner searchSpinnerLike;
     private RadioGroup searchRadioGroup;
     private RequestQueue requestQueue;
     private LoadMoreListView bookListView;
@@ -106,17 +109,24 @@ public class SearchResultActivity extends Activity implements LoadMoreListView.I
         final View highLinear = LinearLayout.inflate(SearchResultActivity.this, R.layout.highsearch, null);
         searchRadioGroup = (RadioGroup) highLinear.findViewById(R.id.search_radiogroup);
         searchSpinner = (Spinner) highLinear.findViewById(R.id.search_spinner);
-
+        //searchSpinnerLike = (Spinner) highLinear.findViewById(R.id.search_spin_like);
         //oneListIn = (LinearLayout) getLayoutInflater().inflate(R.layout.onebooklistview,null).findViewById(R.id.one_list_linear_in);
         //给下拉菜单添加适配器
-        final String type[] = {"所有字段", "题名关键词", "作者", "索书号"};
+        final String type[] = {"所有字段", "书名","书名精确匹配","作者", "索书号"};
         List<String> list = new ArrayList<>();
         for (int i = 0; i < type.length; i++) {
             list.add(type[i]);
         }
         ArrayAdapter<String> adapterSpin = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, list);
-
         searchSpinner.setAdapter(adapterSpin);
+        /*List<String> list1 = new ArrayList<>();
+        final String type2[] = {"包含","精确","前方一致"};
+        for(int i = 0;i<type2.length;i++){
+            list1.add(type2[i]);
+        }
+        ArrayAdapter<String> adapterLike = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_dropdown_item,list1);
+        searchSpinnerLike.setAdapter(adapterLike);*/
+
         //创建自定义弹窗
         AlertDialog.Builder ab = new AlertDialog.Builder(SearchResultActivity.this);
         ab.setTitle("高级选项");
@@ -130,12 +140,13 @@ public class SearchResultActivity extends Activity implements LoadMoreListView.I
                 searchText.clearFocus();
                 search = searchText.getText().toString();
                 searchType = searchSpinner.getSelectedItemPosition();
+                //searchLike = searchSpinnerLike.getSelectedItemPosition();
                 if (searchRadioGroup.getCheckedRadioButtonId() == R.id.search_lan_china)
                     language = "zzu01";
                 else
                     language = "zzu09";
                 searchTypeString = getType();
-
+                //searchLikeString = getLike();
                 //各种参数设置好后，开始搜索
                 //方法get url=action="http://202.197.191.171:8991/F/92ED4PYTJPPMK3G9EPEBE4I83F5GGPILM287K28BLXDC447GA8-77347
                 //拼合url
@@ -251,13 +262,43 @@ public class SearchResultActivity extends Activity implements LoadMoreListView.I
             case 1:
                 return "WTI";
             case 2:
-                return "WAU";
+                return "TIT";
             case 3:
+                return "WAU";
+            case 4:
                 return "CAL";
             default:
                 return "WRD";
         }
     }
+    //   vl(1UIStartWith0)
+    /*public String getLike(){
+        String before;
+        switch (searchType){
+            case 0:
+                before = "vl%281UIStartWith0%29";
+            case 1:
+                before = "vl%281UIStartWith0%29";
+            case 2:
+                before = "vl%281UIStartWith1%29";
+            case 3:
+                before = "vl%281UIStartWith0%29";
+                break;
+            default:
+                before = "vl%281UIStartWith0%29";
+                break;
+        }
+        switch (searchLike){
+            case 0:
+                return before+"="+"contains";
+            case 1:
+                return before+"="+"exact";
+            case 2:
+                return before+"="+"begins_with";
+            default:
+                return before+"="+"contains";
+        }
+    }*/
 
 
     private BookAdapter bookAdapter;

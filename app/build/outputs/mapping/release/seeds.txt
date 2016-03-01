@@ -2431,6 +2431,7 @@ com.codeevery.zzudingding.R$id: int check_empty_room
 com.codeevery.zzudingding.R$id: int check_grade
 com.codeevery.zzudingding.R$id: int check_num_dialog
 com.codeevery.zzudingding.R$id: int check_num_submit
+com.codeevery.zzudingding.R$id: int check_update
 com.codeevery.zzudingding.R$id: int checkbox
 com.codeevery.zzudingding.R$id: int chronometer
 com.codeevery.zzudingding.R$id: int collapseActionView
@@ -2737,6 +2738,8 @@ com.codeevery.zzudingding.R$string: int abc_shareactionprovider_share_with_appli
 com.codeevery.zzudingding.R$string: int abc_toolbar_collapse_description
 com.codeevery.zzudingding.R$string: int about_me_update1_2
 com.codeevery.zzudingding.R$string: int about_me_update1_3
+com.codeevery.zzudingding.R$string: int about_me_update1_4
+com.codeevery.zzudingding.R$string: int about_me_update1_5
 com.codeevery.zzudingding.R$string: int about_me_zhaopin
 com.codeevery.zzudingding.R$string: int action_settings
 com.codeevery.zzudingding.R$string: int app_name
